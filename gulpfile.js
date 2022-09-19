@@ -1,7 +1,9 @@
 
 const { watch, series, parallel } = require("gulp");
-
 const browserSync = require('browser-sync').create()            
+
+// Configuration
+const path = require("./config/path.js")
 
 // Задачи
 const clear = require('./tasks/clear.js')
@@ -12,14 +14,14 @@ const html = require('./tasks/html.js')
 const server = () => {
         browserSync.init({
                 server: {
-                        baseDir: "./public"
+                        baseDir: path.root
                 }
         })
 }
 
 // Наблюдение за файлами
 const watcher = () => {
-        watch("./src/html/**/*.html", html).on('all', browserSync.reload)
+        watch(path.html.watch, html).on('all', browserSync.reload)
 
 }
 exports.html = html;
