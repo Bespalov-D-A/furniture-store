@@ -1,0 +1,22 @@
+@import url('./base/reset.scss');
+@import url('./base/test.scss');
+
+@mixin ph {
+    @media (max-width: 1000px) {
+        @content;
+    }
+}
+
+@include ph {
+    body {
+        background: red !important;
+    }
+}
+
+
+@media (max-width: 1010px) {
+    body {
+        border: solid 20px black;
+    }
+    
+}
