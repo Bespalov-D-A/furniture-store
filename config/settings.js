@@ -11,4 +11,11 @@ module.exports = {
       })),
     };
   },
+
+  webpack: {
+    configuration: {
+      mode: "development"
+    }
+    
+  }
 };
