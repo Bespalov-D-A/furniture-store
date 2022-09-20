@@ -17,5 +17,11 @@ module.exports = {
       mode: "development"
     }
     
+  },
+
+  imagemin: {
+    configuration: {
+      verbose: true
+    }
   }
 };

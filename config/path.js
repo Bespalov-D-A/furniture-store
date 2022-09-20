@@ -19,5 +19,11 @@ module.exports = {
         src: pathSrc + '/js/*.js',
         watch: pathSrc + "/js/**/*.js",
         dest: pathDest + "/js"
+    },
+
+    img: {
+        src: pathSrc + '/img/*.{jpg,png,jpeg,gif,svg}',
+        watch: pathSrc + "/img/**/*.{jpg,png,jpeg,gif,svg}",
+        dest: pathDest + "/img"
     }
 }

@@ -15,6 +15,7 @@ const size = require("gulp-size") // Показываем размер файл�
 const shorthand = require("gulp-shorthand") // Сокращает все возможные свойства css
 const groupmedia = require("gulp-group-css-media-queries")
 const sass = require("gulp-sass")(require("sass")) 
+const webpCss = require("gulp-webp-css")
 
 
 // processing
@@ -23,6 +24,7 @@ const scss = () => {
     .pipe(plumber(settings.plumber(notify, 'SCSS')))
     .pipe(sass())
     .pipe(cssimport())
+    .pipe(webpCss())
     .pipe(shorthand())
     .pipe(groupmedia())
     .pipe(autoprefixer())
