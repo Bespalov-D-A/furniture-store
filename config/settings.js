@@ -3,25 +3,24 @@ module.exports = {
     collapseWhitespase: true,
   },
 
-  plumber: (notify) => {
+  plumber: (notify, title) => {
     return {
       errorHandler: notify.onError((error) => ({
-        title: "HTML",
+        title,
         message: error.message,
       })),
-    };
+    }
   },
 
   webpack: {
     configuration: {
-      mode: "development"
-    }
-    
+      mode: 'development',
+    },
   },
 
   imagemin: {
     configuration: {
-      verbose: true
-    }
-  }
-};
+      verbose: true,
+    },
+  },
+}
