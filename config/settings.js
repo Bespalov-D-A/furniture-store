@@ -3,6 +3,10 @@ module.exports = {
     collapseWhitespase: true,
   },
 
+  fonter: {
+    formats: ['eot'],
+  },
+
   plumber: (notify, title) => {
     return {
       errorHandler: notify.onError((error) => ({
