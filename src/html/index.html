@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-        <head>
-                <meta charset="UTF-8" />
-                <title></title>
-                <link rel="stylesheet" href="/css/main.min.css">
-                <script src="/js/main.min.js"></script>
-        </head>
-        <body>
-                @@include("chunk/header.html")
-                <main>
-                        <h1>Home page!!</h1>
-                       
-                        @@loop("chunk/news-item.html", "../../data/news.json")
-                </main>
-                @@include("chunk/footer.html")
-        </body>
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <link rel="stylesheet" href="/css/main.min.css" />
+    <script src="/js/main.min.js"></script>
+  </head>
+  <body>
+    @@include("chunk/header.html")
+    <main>
+      <h1>Home page!!</h1>
+      <img src="./" alt="" />
+      @@loop("chunk/news-item.html", "../../data/news.json")
+    </main>
+    @@include("chunk/footer.html")
+  </body>
 </html>

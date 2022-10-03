@@ -1,6 +1,11 @@
+const isProduction = process.argv.includes('--production')
+const isDevelopment = !isProduction
+
 module.exports = {
+  isProduction,
+
   htmlmin: {
-    collapseWhitespase: true,
+    collapseWhitespase: isProduction, //delete spacing in production
   },
 
   fonter: {
@@ -18,7 +23,7 @@ module.exports = {
 
   webpack: {
     configuration: {
-      mode: 'development',
+      mode: isProduction ? 'production' : 'development',
     },
   },
 
