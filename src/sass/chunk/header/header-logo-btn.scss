@@ -1,0 +1,5 @@
+.logo-btn {
+  padding: 12px 27px 13px 27px;
+
+  @include btn-trans($green);
+}

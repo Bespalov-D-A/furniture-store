@@ -1,0 +1,19 @@
+.logo {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  height: 80px;
+
+  padding-left: 100px;
+  background-image: url('./../img/logo.svg') no-repeat;
+  background-size: 80px 80px;
+  background-position: left center;
+  text-transform: uppercase;
+
+  color: $green;
+}
+
+.logo__title {
+  font-weight: 700;
+  font-style: bold;
+}

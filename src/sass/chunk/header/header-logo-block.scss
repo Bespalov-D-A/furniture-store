@@ -1,0 +1,22 @@
+.logo-block {
+  padding: 20px 20px 0 20px;
+  background: $white;
+  border-bottom: solid 1px $main-bg;
+}
+
+.logo-block__wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: $page-large;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.logo-block__wrapper--info-phone {
+  margin-right: 40px;
+  color: $black;
+  font-size: 16px;
+}

@@ -1,0 +1,16 @@
+.header-menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  padding: 17px 0 16px;
+  margin: 0 auto;
+
+  .header-menu__item {
+    margin: 0 10px 0 0;
+  }
+
+  .header-menu__item:last-child {
+    margin: 0;
+  }
+}

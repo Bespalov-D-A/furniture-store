@@ -1,0 +1,25 @@
+.header-nav {
+  width: 100%;
+
+  padding: 30px;
+
+  background: $white;
+}
+
+.header-nav__wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  max-width: $page-large;
+
+  margin: 0 auto;
+}
+
+.header-nav__wrapper--link {
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.header-nav__wrapper--link:last-child {
+  margin-right: 0;
+}
