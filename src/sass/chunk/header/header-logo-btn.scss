@@ -1,5 +1,8 @@
 .logo-btn {
-  padding: 12px 27px 13px 27px;
+  padding: 10px 25px 12px 25px;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.2px;
 
   @include btn-trans($green);
 }

@@ -4,6 +4,8 @@
   align-items: center;
   height: 80px;
 
+  padding-top: 3px;
+
   padding-left: 100px;
   background-image: url('./../img/logo.svg') no-repeat;
   background-size: 80px 80px;
@@ -14,6 +16,7 @@
 }
 
 .logo__title {
+  letter-spacing: 3.6px;
   font-weight: 700;
   font-style: bold;
 }

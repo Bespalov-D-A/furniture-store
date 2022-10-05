@@ -3,7 +3,7 @@ const isDevelopment = !isProduction
 
 module.exports = {
   isProduction,
-  isDevelopment,
+	isDevelopment,
 
   htmlmin: {
     collapseWhitespase: isProduction, //delete spacing in production

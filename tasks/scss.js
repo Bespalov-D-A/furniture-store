@@ -18,6 +18,8 @@ const sass = require('gulp-sass')(require('sass'))
 const webpCss = require('gulp-webp-css')
 
 // processing
+//
+//
 const scss = () => {
   return src(path.scss.src, { sourcemaps: settings.isDevelopment })
     .pipe(plumber(settings.plumber(notify, 'SCSS')))
@@ -30,7 +32,7 @@ const scss = () => {
     .pipe(size({ title: 'main.css' }))
     .pipe(dest(path.scss.dest, { sourcemaps: settings.isDevelopment })) //source map only dev mod
     .pipe(rename({ suffix: '.min' }))
-    .pipe(csso())
+    .pipe(csso({ sourceMap: settings.isDevelopment }))
     .pipe(size({ title: 'main.min.css' }))
     .pipe(dest(path.scss.dest, { sourcemaps: settings.isDevelopment }))
 }
