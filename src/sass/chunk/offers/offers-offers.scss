@@ -7,13 +7,15 @@
   width: 100%;
 
   margin: 0 auto;
-  padding-top: 80px;
+  padding-top: 68px;
 }
 
 .offers__title {
   grid-column: 1/4;
   grid-row: 1/2;
   align-self: center;
+
+padding-bottom: 12px;
 
   font-size: 24px;
   line-height: 24px;
@@ -23,8 +25,10 @@
 .offers__image {
   grid-column: 4/5;
   grid-row: 1/2;
-  align-self: center;
 
+  padding-right: 24px;
+
+  align-self: center;
   text-align: center;
 }
 

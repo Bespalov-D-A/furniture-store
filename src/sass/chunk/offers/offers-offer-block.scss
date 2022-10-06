@@ -10,15 +10,19 @@
 
 .offer-block__body {
   max-width: 250px;
+
+  padding-top: 5px;
 }
 
 .offer-block__prev {
   flex-grow: 1;
   text-align: right;
+
+  padding-right: 5px;
 }
 
 .offer-block__body--title {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 
   font-size: 18px;
   font-weight: 700;

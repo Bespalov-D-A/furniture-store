@@ -10,23 +10,27 @@
   background: $white;
 }
 
+.offers-card__img {
+margin-bottom: 16px;
+}
+
 .offers-card__desc {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 
   line-height: 20px;
 }
 
 .offers-card__price {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 
   font-size: 21px;
   line-height: 21px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
   font-weight: 700;
 }
 
 .offer-btn {
-  padding: 9px 40px;
+  padding: 9px 43px;
   font-size: 14px;
   line-height: 16px;
 
