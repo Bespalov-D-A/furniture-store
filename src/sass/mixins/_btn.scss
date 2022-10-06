@@ -4,3 +4,10 @@
   color: $color;
   background: $bg;
 }
+
+@mixin btn-splash($bg: $green, $color: $white) {
+  border-radius: 300px;
+  border: none;
+  color: $color;
+  background: $bg;
+}

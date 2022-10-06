@@ -38,12 +38,10 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify": "^3.0.2",
     "gulp-webp-css": "^1.1.0",
+    "gulp-webp": "^4.0.1",
     "gulp-webp-html-nosvg": "^1.1.1",
     "sass": "^1.54.9",
     "webpack": "^5.74.0",
     "webpack-stream": "^7.0.0"
-  },
-  "dependencies": {
-    "gulp-webp": "^4.0.1"
   }
 }

@@ -1,0 +1,32 @@
+<section class="offers">
+  <h3 class="offers__title">Специальные предложения</h3>
+  <div class="offers__image">
+    <img class="offers__image--img" src="./../img/car.svg" alt="" />
+  </div>
+  @@loop('./offers-card-item.html', './../../data/offers.json')
+  <div class="offers__offer--left">
+    <div class="offer-block">
+      <div class="offer-block__body">
+        <p class="offer-block__body--title">Получайте бонусы и подарки</p>
+        <p class="offer-block__body--desc">Каждый месяц разыгрываем 10 000 рублей для наших клиентов</p>
+        <input class="offer-block-input" type="text" placeholder="Введите e-mail" />
+      </div>
+      <div class="offer-block__prev">
+        <img class="offer-block__prev--image" src="./../img/envelope.svg" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="offers__offer--right">
+    <div class="offer-block">
+      <div class="offer-block__body">
+        <p class="offer-block__body--title">Заходите к нам</p>
+        <p class="offer-block__body--desc">
+          Более 300 магазинов<br />
+          по всей России
+        </p>
+        <div class="offer-block__body--link">Карта магазинов</div>
+      </div>
+      <div class="offer-block__prev"></div>
+    </div>
+  </div>
+</section>

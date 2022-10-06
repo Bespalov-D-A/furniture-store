@@ -1,0 +1,39 @@
+.offer-block {
+  display: flex;
+
+  padding: 35px 40px;
+
+  color: $white;
+
+  background: $green;
+}
+
+.offer-block__body {
+  max-width: 250px;
+}
+
+.offer-block__prev {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.offer-block__body--title {
+  margin-bottom: 25px;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.offer-block__body--desc {
+  margin-bottom: 25px;
+
+  line-height: 20px;
+}
+
+.offer-block__body--link {
+  display: inline-block;
+
+  padding: 9px 29px 9px;
+
+  @include btn-trans($white, $green, $white);
+}

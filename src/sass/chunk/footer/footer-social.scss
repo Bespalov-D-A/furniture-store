@@ -1,0 +1,36 @@
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social__item {
+  margin-right: 20px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__item--link {
+  display: block;
+  width: 45px;
+  height: 45px;
+
+  border: solid 2px $green;
+  border-radius: 50%;
+}
+
+.youtube {
+  background: url('./../img/social/youtube.svg') no-repeat center center;
+}
+
+.vk {
+  background: url('./../img/social/vk.svg') no-repeat center center;
+}
+
+.fb {
+  background: url('./../img/social/facebook.svg') no-repeat center center;
+}
+
+.inst {
+  background: url('./../img/social/inst.svg') no-repeat center center;
+}
