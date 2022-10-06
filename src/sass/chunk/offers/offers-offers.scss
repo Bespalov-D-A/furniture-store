@@ -8,6 +8,10 @@
 
   margin: 0 auto;
   padding-top: 68px;
+
+  @media screen and (max-width: $mobile) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .offers__title {
@@ -15,11 +19,26 @@
   grid-row: 1/2;
   align-self: center;
 
-padding-bottom: 12px;
+  padding-bottom: 12px;
 
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
+
+  @media screen and (max-width: $page-large) {
+    padding-left: 20px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    grid-column: 1/2;
+  }
+
+  @media screen and (max-width: $mobile-420) {
+    text-align: center;
+
+    grid-column: 1/3;
+    grid-row: auto;
+  }
 }
 
 .offers__image {
@@ -30,6 +49,18 @@ padding-bottom: 12px;
 
   align-self: center;
   text-align: center;
+
+  @media screen and (max-width: $mobile) {
+    grid-column: 2/3;
+  }
+
+  @media screen and (max-width: $mobile-420) {
+    padding-right: 0;
+    margin-bottom: 20px;
+
+    grid-column: 1/3;
+    grid-row: 1;
+  }
 }
 
 .offers__offer--left {
@@ -46,4 +77,12 @@ padding-bottom: 12px;
 .offers__offer--left {
   padding-top: 100px;
   margin-bottom: 133px;
+
+  @media screen and (max-width: $mobile) {
+    margin: 0;
+    padding-top: 30px;
+
+    grid-column: 1/3;
+    grid-row: auto;
+  }
 }

@@ -1,3 +1,7 @@
 .offers-grid-item {
   padding-top: 15px;
+
+  @media screen and (max-width: $mobile) {
+    grid-column: 1/3;
+  }
 }

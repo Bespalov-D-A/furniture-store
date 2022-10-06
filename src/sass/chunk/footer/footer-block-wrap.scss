@@ -1,12 +1,23 @@
 .footer-block-wrap {
-display: flex;
-justify-content: space-between;
-align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-width: 100%;
+  width: 100%;
 
-padding: 37px 0 38px;
-margin: 0 auto;
+  padding: 37px 0 38px;
+  margin: 0 auto;
 
-max-width: $page-large;
+  max-width: $page-large;
+
+  @media screen and (max-width: $desktop) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media screen and (max-width: $bottom-point) {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  }
 }

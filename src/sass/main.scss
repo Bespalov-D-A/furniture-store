@@ -27,6 +27,8 @@ h3 {
 }
 
 body {
+  position: relative;
+
   background: $main-bg;
   color: $dark;
   font-family: 'Roboto';
@@ -34,6 +36,8 @@ body {
   font-weight: 400;
   font-size: $font-normal;
 }
+
+@import './chunk/assests/mobile-menu-icon.scss';
 @import './chunk/header/header-index.scss';
 @import './chunk/banner/banner-index.scss';
 @import './chunk/offers/offers-index.scss';

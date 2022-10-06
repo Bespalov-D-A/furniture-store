@@ -1,3 +1,9 @@
 .address {
-padding-left: 100px;
+  padding-left: 100px;
+
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 20px;
+
+    padding-left: 0;
+  }
 }
