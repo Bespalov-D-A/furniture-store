@@ -35,9 +35,13 @@ body {
   line-height: 1em;
   font-weight: 400;
   font-size: $font-normal;
+
+  @media screen and (max-width: $mobile) {
+    padding-top: 80px;
+  }
 }
 
-@import './chunk/assests/mobile-menu-icon.scss';
+@import './chunk/assests/assests-index.scss';
 @import './chunk/header/header-index.scss';
 @import './chunk/banner/banner-index.scss';
 @import './chunk/offers/offers-index.scss';

@@ -15,17 +15,17 @@
   \************************/
 /***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
 
-eval("const test = __webpack_require__(/*! ./modules/test.js */ \"./src/js/modules/test.js\")\n\nconst ab = (a, b) => a+b;\nconsole.log(ab(2, 2) + test(3, 3));\n\n//# sourceURL=webpack:///./src/js/main.js?");
+eval("const mobileMenu = __webpack_require__(/*! ./modules/mobile-menu.js */ \"./src/js/modules/mobile-menu.js\")\n\nconst ready = () => {\n  return mobileMenu()\n}\n\ndocument.addEventListener('DOMContentLoaded', ready)\n\n\n//# sourceURL=webpack:///./src/js/main.js?");
 
 /***/ }),
 
-/***/ "./src/js/modules/test.js":
-/*!********************************!*\
-  !*** ./src/js/modules/test.js ***!
-  \********************************/
+/***/ "./src/js/modules/mobile-menu.js":
+/*!***************************************!*\
+  !*** ./src/js/modules/mobile-menu.js ***!
+  \***************************************/
 /***/ (function(module) {
 
-eval("module.exports = (a, b) => a + b;\n\n//# sourceURL=webpack:///./src/js/modules/test.js?");
+eval("const mobileMenu = () => {\n  const mobileNavBtn = document.getElementById('mobile-nav-btn')\n  const mobileMenuBtn = document.getElementById('mobile-menu-btn')\n  const nav = document.getElementById('header-nav')\n  const menu = document.getElementById('header-menu')\n\n  const openNav = () => {\n    nav.classList.toggle('header-nav--d-block')\n  }\n\n  const openMenu = () => {\n    menu.classList.toggle('header-menu--d-block')\n  }\n\n  mobileNavBtn.addEventListener('click', openNav)\n  mobileMenuBtn.addEventListener('click', openMenu)\n}\n\nmodule.exports = mobileMenu\n\n\n//# sourceURL=webpack:///./src/js/modules/mobile-menu.js?");
 
 /***/ })
 

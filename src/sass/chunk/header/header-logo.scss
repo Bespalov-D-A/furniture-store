@@ -13,6 +13,10 @@
   text-transform: uppercase;
 
   color: $green;
+
+  @media screen and (max-width: $mobile-420) {
+    margin-bottom: 30px;
+  }
 }
 
 .logo__title {

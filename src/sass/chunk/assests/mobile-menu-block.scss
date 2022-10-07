@@ -1,0 +1,24 @@
+.mobile-menu-block {
+  display: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  @media screen and (max-width: $mobile) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    padding: 10px 20px 10px 20px;
+    background: $main-bg;
+  }
+}
+
+.mobile-menu-icon {
+  padding: 13px 15px 5px 17px;
+}
+
+.mobile-menu-icon__img {
+  width: 30px;
+}

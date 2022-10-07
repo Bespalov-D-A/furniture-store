@@ -1,4 +1,7 @@
-const test = require("./modules/test.js")
+const mobileMenu = require('./modules/mobile-menu.js')
 
-const ab = (a, b) => a+b;
-console.log(ab(2, 2) + test(3, 3));
+const ready = () => {
+  return mobileMenu()
+}
+
+document.addEventListener('DOMContentLoaded', ready)
