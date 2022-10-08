@@ -1337,17 +1337,17 @@ body {
 }
 
 .mobile-menu-icon {
-  padding: 13px 15px 5px 17px;
+  padding: 10px 15px 5px 23px;
 }
 
 .mobile-menu-icon__img {
-  width: 30px;
+  width: 20px;
 }
 
 .mobile-nav-icon {
-  width: 92px;
-  height: 78px;
-  background: url("./../img/icons/menu.svg") no-repeat center center;
+  width: 70px;
+  height: 60px;
+  background: url("./../img/icons/menu.svg") no-repeat center center/40px;
 }
 
 .mobile-nav-icon.mobile-nav-icon--active {
@@ -1736,7 +1736,7 @@ body {
 
 @media screen and (max-width: 900px) {
   body {
-    padding-top: 100px;
+    padding-top: 60px;
   }
 
   .mobile-menu-block {
@@ -1748,7 +1748,6 @@ body {
     left: 0;
     right: 0;
     z-index: 200;
-    padding: 10px 20px 10px 20px;
     background: #efefef;
   }
 

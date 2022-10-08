@@ -18,6 +18,17 @@ const mobileMenu = () => {
 
   mobileNavBtn.addEventListener('click', openNav)
   mobileMenuBtn.addEventListener('click', openMenu)
+
+  document.addEventListener('click', (e) => {
+    const withinBoundaries = e.composedPath().includes(menu)
+    const isBtn = e.composedPath().includes(mobileMenuBtn)
+
+    if (!withinBoundaries && !isBtn) {
+      if (menu.classList.contains('header-menu--visible')) {
+        menu.classList.remove('header-menu--visible')
+      }
+    }
+  })
 }
 
 module.exports = mobileMenu

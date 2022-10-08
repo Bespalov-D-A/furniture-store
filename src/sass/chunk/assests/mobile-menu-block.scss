@@ -10,24 +10,23 @@
     left: 0;
     right: 0;
     z-index: 200;
-    padding: 10px 20px 10px 20px;
     background: $main-bg;
   }
 }
 
 .mobile-menu-icon {
-  padding: 13px 15px 5px 17px;
+  padding: 10px 15px 5px 23px;
 }
 
 .mobile-menu-icon__img {
-  width: 30px;
+  width: 20px;
 }
 
 .mobile-nav-icon {
-  width: 92px;
-  height: 78px;
+  width: 70px;
+  height: 60px;
 
-  background: url('./../img/icons/menu.svg') no-repeat center center;
+  background: url('./../img/icons/menu.svg') no-repeat center center / 40px;
 
   &.mobile-nav-icon--active {
     background: url('./../img/icons/close.svg') no-repeat center right 20px / 30px;
