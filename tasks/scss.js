@@ -21,20 +21,22 @@ const webpCss = require('gulp-webp-css')
 //
 //
 const scss = () => {
-  return src(path.scss.src, { sourcemaps: settings.isDevelopment })
-    .pipe(plumber(settings.plumber(notify, 'SCSS')))
-    .pipe(sass())
-    .pipe(cssimport())
-    .pipe(webpCss())
-    .pipe(shorthand())
-    .pipe(groupmedia())
-    .pipe(autoprefixer())
-    .pipe(size({ title: 'main.css' }))
-    .pipe(dest(path.scss.dest, { sourcemaps: settings.isDevelopment })) //source map only dev mod
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(csso({ sourceMap: settings.isDevelopment }))
-    .pipe(size({ title: 'main.min.css' }))
-    .pipe(dest(path.scss.dest, { sourcemaps: settings.isDevelopment }))
+  return (
+    src(path.scss.src, { sourcemaps: settings.isDevelopment })
+      .pipe(plumber(settings.plumber(notify, 'SCSS')))
+      .pipe(sass())
+      .pipe(cssimport())
+      //   .pipe(webpCss())
+      .pipe(shorthand())
+      .pipe(groupmedia())
+      //    .pipe(autoprefixer())
+      .pipe(size({ title: 'main.css' }))
+      .pipe(dest(path.scss.dest, { sourcemaps: settings.isDevelopment })) //source map only dev mod
+      .pipe(rename({ suffix: '.min' }))
+      .pipe(csso({ sourceMap: settings.isDevelopment }))
+      .pipe(size({ title: 'main.min.css' }))
+      .pipe(dest(path.scss.dest, { sourcemaps: settings.isDevelopment }))
+  )
 }
 
 module.exports = scss

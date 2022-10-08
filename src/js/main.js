@@ -1,7 +1,9 @@
+const AOS = require('./library/aos.js')
 const mobileMenu = require('./modules/mobile-menu.js')
 
 const ready = () => {
-  return mobileMenu()
+  mobileMenu()
 }
 
 document.addEventListener('DOMContentLoaded', ready)
+AOS.init({ once: true })

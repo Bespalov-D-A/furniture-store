@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="css/main.min.css" />
-    <script src="js/main.min.js"></script>
   </head>
   <body>
     <div class="mobile-menu-block">
   <div id="mobile-menu-btn" class="mobile-menu-icon">
-    <img class="mobile-menu-icon__img" src="img/arrow.svg" alt="" />
+    <img class="mobile-menu-icon__img" src="img/icons/arrow.svg" alt="" />
   </div>
-  <img id="mobile-nav-btn" class="mobile-nav-icon" src="img/menu-icon.svg" alt="" />
+  <div id="mobile-nav-btn" class="mobile-nav-icon"></div>
 </div>
  <header>
   <ul id="header-menu" class="header-menu">
@@ -34,7 +33,7 @@
   </li>
 </ul>
 <!-- menu -->
-  <div class="logo-block">
+  <div data-aos="fade-right" class="logo-block">
   <div class="logo-block__wrapper logo-wrapper">
     <div class="logo">
       <h2 class="logo__title">beauty</h2>
@@ -61,7 +60,7 @@
 <!-- header-nav -->
 </header>
  <section>
-  <div class="banner">
+  <div data-aos="fade-up" class="banner">
   <div class="banner__wrap">
     <div class="banner-left-side">
       <h1 class="banner-left-side__title">Супер кресло</h1>
@@ -81,7 +80,7 @@
   <div class="offers__image">
     <img class="offers__image--img" src="img/car.svg" alt="" />
   </div>
-  <div class="offers-grid-item">
+  <div data-aos="flip-down" class="offers-grid-item">
   <div class="offers-card">
     <picture><source srcset="img/chair-card.webp" type="image/webp"><img class="offers-card__img" src="img/chair-card.png" alt="" /></picture>
     <p class="offers-card__desc">Парикмахерское кресло «Норм» гидравлическое</p>
@@ -89,7 +88,7 @@
     <button class="offers-card__btn offer-btn">Купить</button>
   </div>
 </div>
-<div class="offers-grid-item">
+<div data-aos="flip-down" class="offers-grid-item">
   <div class="offers-card">
     <picture><source srcset="img/chair-card.webp" type="image/webp"><img class="offers-card__img" src="img/chair-card.png" alt="" /></picture>
     <p class="offers-card__desc">Парикмахерское кресло «Норм» гидравлическое</p>
@@ -97,7 +96,7 @@
     <button class="offers-card__btn offer-btn">Купить</button>
   </div>
 </div>
-<div class="offers-grid-item">
+<div data-aos="flip-down" class="offers-grid-item">
   <div class="offers-card">
     <picture><source srcset="img/chair-card.webp" type="image/webp"><img class="offers-card__img" src="img/chair-card.png" alt="" /></picture>
     <p class="offers-card__desc">Парикмахерское кресло «Норм» гидравлическое</p>
@@ -105,7 +104,7 @@
     <button class="offers-card__btn offer-btn">Купить</button>
   </div>
 </div>
-<div class="offers-grid-item">
+<div data-aos="flip-down" class="offers-grid-item">
   <div class="offers-card">
     <picture><source srcset="img/chair-card.webp" type="image/webp"><img class="offers-card__img" src="img/chair-card.png" alt="" /></picture>
     <p class="offers-card__desc">Парикмахерское кресло «Норм» гидравлическое</p>
@@ -114,7 +113,7 @@
   </div>
 </div>
 
-  <div class="offers__offer--left">
+  <div data-aos="zoom-in-right" class="offers__offer--left">
     <div class="offer-block">
       <div class="offer-block__body">
         <p class="offer-block__body--title">Получайте бонусы и подарки</p>
@@ -126,7 +125,7 @@
       </div>
     </div>
   </div>
-  <div class="offers__offer--right">
+  <div data-aos="zoom-in-left" class="offers__offer--right">
     <div class="offer-block">
       <div class="offer-block__body">
         <p class="offer-block__body--title">Заходите к нам</p>
@@ -143,7 +142,7 @@
 <!-- menu -->
 </main>
     <footer>
-  <div class="footer">
+  <div data-aos="fade-up" class="footer">
   <div class="footer-block">
     <div class="footer-block__wrapper footer-block-wrap">
       <ul class="social">
@@ -182,5 +181,7 @@
   <!-- footer -->
 </footer>
 
+
+    <script src="js/main.min.js"></script>
   </body>
 </html>

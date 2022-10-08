@@ -37,7 +37,7 @@ body {
   font-size: $font-normal;
 
   @media screen and (max-width: $mobile) {
-    padding-top: 80px;
+    padding-top: 100px;
   }
 }
 
@@ -46,3 +46,4 @@ body {
 @import './chunk/banner/banner-index.scss';
 @import './chunk/offers/offers-index.scss';
 @import './chunk/footer/footer-index.scss';
+@import './library/aos.css';

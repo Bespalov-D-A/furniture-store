@@ -5,11 +5,15 @@ const mobileMenu = () => {
   const menu = document.getElementById('header-menu')
 
   const openNav = () => {
-    nav.classList.toggle('header-nav--d-block')
+    if (nav.classList.toggle('header-nav--visible')) {
+      mobileNavBtn.classList.add('mobile-nav-icon--active')
+    } else {
+      mobileNavBtn.classList.remove('mobile-nav-icon--active')
+    }
   }
 
   const openMenu = () => {
-    menu.classList.toggle('header-menu--d-block')
+    menu.classList.toggle('header-menu--visible')
   }
 
   mobileNavBtn.addEventListener('click', openNav)

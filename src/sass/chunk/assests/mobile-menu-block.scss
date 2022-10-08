@@ -22,3 +22,14 @@
 .mobile-menu-icon__img {
   width: 30px;
 }
+
+.mobile-nav-icon {
+  width: 92px;
+  height: 78px;
+
+  background: url('./../img/icons/menu.svg') no-repeat center center;
+
+  &.mobile-nav-icon--active {
+    background: url('./../img/icons/close.svg') no-repeat center right 20px / 30px;
+  }
+}
