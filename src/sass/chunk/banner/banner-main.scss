@@ -3,7 +3,9 @@
   background: $green;
   color: $white;
 
-  background: url('./../img/banner.jpg') no-repeat center center;
+  background-image: url('./../img/banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
 
   @media screen and (max-width: $desktop) {
     padding-left: 20px;
@@ -11,6 +13,8 @@
   }
 
   @media screen and (max-width: $mobile-420) {
+    background-image: url('./../img/banner.jpg');
+    background-repeat: no-repeat;
     background-position: right -650px center;
   }
 }
@@ -21,4 +25,8 @@
 
   padding-top: 196px;
   margin: 0 auto;
+
+  @media screen and (max-width: $mobile-420) {
+    padding-top: 20px;
+  }
 }

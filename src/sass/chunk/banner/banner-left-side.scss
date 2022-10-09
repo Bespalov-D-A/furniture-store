@@ -19,9 +19,18 @@
   margin-bottom: 43px;
   font-weight: bold;
   font-style: bold;
+
+  @media screen and (max-width: $mobile-420) {
+    color: #444;
+  }
 }
 
 .banner-left-side__desc {
   line-height: 20px;
   margin-bottom: 44px;
+
+  @media screen and (max-width: $mobile-420) {
+    max-width: 200px;
+    color: #222;
+  }
 }
